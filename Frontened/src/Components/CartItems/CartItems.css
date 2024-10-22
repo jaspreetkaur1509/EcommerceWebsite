@@ -107,4 +107,105 @@
     color: white;
 }
 
+@media(max-width:1280px){
+    .cartitems{
+        margin: 60px 50px;
+    }
+    .cartitems-format-main{
+        grid-template-columns: 0.5fr 3fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        gap: 20px;
+        padding: 15px 0px;
+        font-size: 15px;
+    }
+    .carticon-product-item{
+        height: 50px;
+    }
+    .cartitems-remove_icon{
+        margin: auto;
+    }
+    .cartitems-quantity{
+        width: 40px;
+        height: 30px;
+    }
+    .cartitem-down{
+        margin: 80px 0px;
+        flex-direction: column;
+        gap: 80px;
+    }
+    .cartitemstotal{
+        margin: 0;
+    }
+    .cartitemstotal button{
+        max-width: 200px;
+        height:45px;
+        font-size: 13px;
+    }
+    .cartitems-format-main{
+        width: auto;
+        max-width: 50px;
+    }
+    .cartitems-promobox input{
+        width: 100%;
+    }
+    .cartitems-promobox button{
+        width: 120px;
+        margin-left: -125px;
+    }
+}
 
+
+@media(max-width:800px){
+    .cartitems{
+        margin: 60px 50px;
+    }
+    .cartitems-format-main{
+        grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
+        gap: 30px;
+        padding: 15px 0px;
+        font-size: 16px;
+        width: 100px;
+    }
+    .carticon-product-item{
+        height: 50px;
+    }
+    .cartitems-format p{
+        font-size: 13px;
+        width: 100px;
+     }
+    .cartitems-remove_icon{
+        margin: auto;
+    }
+    .cartitems-quantity{
+        width: 40px;
+        height: 30px;
+    }
+}
+
+
+@media(max-width:500px){
+    .cartitems-format-main{
+        display: none;
+        grid-template-columns: 1fr 3fr 1fr;
+        gap: 10px;
+    }
+    .cartitems-format{
+        display: grid;
+        
+    }
+    .cartitems-format p{
+       font-size: 13px;
+       width: 140px;
+    }
+    .cartitems-promobox{
+        width: 300px;
+        margin-top: 15px;
+        padding-left: 10px;
+        height: 50px;
+    }
+    
+    .cartitems-promobox button{
+        width: 80px;
+        height: 50px;
+        margin-left: -85px;
+    }
+}
