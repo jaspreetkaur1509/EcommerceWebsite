@@ -10,7 +10,7 @@ const ListProduct = () => {
     await fetch('http://localhost:4000/allproducts')
     .then((res)=> res.json()
     .then((data)=>{setAllProducts(data)}))
-  }
+  };
 
   useEffect(()=>{
     fetchInfo();
@@ -42,7 +42,8 @@ const ListProduct = () => {
       <div className="listporduct-allproduct">
         <hr />
         {allproduct.map((product,index)=>{
-          return <> <div key={index} className="listproduct-format-main listproduct-format">
+          return <> 
+          <div key={index} className="listproduct-format-main listproduct-format">
             <img src={product.image} alt="" className="listproduct-product-icon" />
             <p>{product.name}</p>
             <p>${product.old_price}</p>
